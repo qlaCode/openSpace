@@ -1,0 +1,104 @@
+body{
+    background-image: url("space.png");
+
+}
+
+.space{
+
+}
+
+.planet-area{
+    bottom:0;
+    z-index: 3;
+}
+
+.planet{
+    bottom:0;
+    position: absolute;
+    z-index: 4;
+}
+
+.rocket {
+    bottom: 20%;
+    left: 20%;
+    position: absolute;
+    transform: rotate(20deg);
+    z-index: 5;
+}
+
+.control-panel{
+    background: repeating-linear-gradient(
+            45deg,
+            yellow 10px,
+            black 10px,
+            yellow 10px,
+            black 20px
+    );
+    padding: 15px;
+    height: 270px;
+    margin-left: 60%;
+    margin-top: 10%;
+    width: 28%;
+    position: static;
+    z-index: 6;
+}
+
+.control-panel__inner{
+    background-color: #4b5320;
+    padding: 3px;
+    border-radius: 5px;
+    position: relative;
+    width: 100%;
+    z-index: 7;
+}
+
+.check-buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 1em;
+    width: 100%;
+}
+
+.levers{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    padding: 1em;
+    height: 7em;
+}
+
+.levers > *{
+    -webkit-appearance: slider-vertical;
+    bottom: 10%;
+    left: 10%;
+    position: relative;
+    width: 15%;
+}
+
+#btn-launch{
+    left: 45%;
+    border-radius: 50%;
+    height: 50px;
+    background-color: orangered;
+    color: whitesmoke;
+    position: relative;
+}
+
+#input-pw{
+    border-radius: 5px;
+    border-color: yellow;
+    background-color: black;
+    color: white;
+    left: 20%;
+    position: relative;
+    width: 40%;
+}
+
+#btn-ok{
+    left: 25%;
+    border-radius: 5px;
+    background-color: yellow;
+    position: relative;
+    z-index: 20;
+}
